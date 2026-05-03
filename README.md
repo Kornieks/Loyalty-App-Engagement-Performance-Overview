@@ -19,9 +19,13 @@ This includes:
 - redemption activity
 - differences in average check value between loyalty and non-loyalty guests.
 
-Previously, similar reporting was done in Excel, which made it difficult to quickly identify trends, compare restaurant performance, and spot potential issues. This project demonstrates how the same type of reporting could be transformed into an interactive Tableau dashboard for clearer and faster decision-making.
+Previously, similar reporting was done in Excel, which made it difficult to quickly identify trends, compare restaurant performance, and spot potential issues. This project demonstrates how the same type of reporting could be transformed into an interactive Tableau dashboard for clearer and faster decision-making. Below is the previous version of the dashboard visualization:
 
-The goal of the project is to create a management-level dashboard that helps evaluate loyalty app engagement, compare restaurants, monitor validation dynamics, and understand guest behavior over time.
+<img width="1408" height="547" alt="Screenshot 2026-04-08 at 12 18 55" src="https://github.com/user-attachments/assets/ec0cc3b3-d3bb-49a5-baba-0ddb99368d88" />
+
+
+
+**The goal of the project** is to create a management-level dashboard that helps evaluate loyalty app engagement, compare restaurants, monitor validation dynamics, and understand guest behavior over time.
 
 **This project is also based on my personal experience in restaurant operations and reporting. It reflects how I would improve a real reporting process I worked with in the past by using data modeling, SQL logic, a synthetic dataset, and Tableau visualization.**
 
