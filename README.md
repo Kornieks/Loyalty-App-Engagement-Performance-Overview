@@ -60,6 +60,99 @@ Note: The diagram does not represent the exact original production databases. In
 
 ### SQL Code
 
+```
+WITH restaurant_sales AS (
+    SELECT 
+        t.datetime AS date,
+        r.name AS restaurant_name,
+        COUNT(DISTINCT t.check_id) AS checks_count,
+        SUM(t.amount_spent) AS total_sales_amount
+    FROM transactions AS t
+    JOIN restaurants AS r
+        ON t.restaurant_id = r.id
+    WHERE t.datetime >= '2025-01-01'
+      AND t.datetime < '2025-08-01'
+    GROUP BY 
+        t.datetime,
+        r.name
+),
 
+loyalty_sales AS (
+    SELECT
+        lt.datetime AS date,
+        l.location_name,
+        COUNT(DISTINCT lt.id) AS loyalty_checks_count,
+        SUM(lt.amount_spent) AS loyalty_sales_amount
+    FROM loyalty_transactions AS lt
+    JOIN locations AS l
+        ON lt.location_id = l.id
+    WHERE lt.datetime >= '2025-01-01'
+      AND lt.datetime < '2025-08-01'
+    GROUP BY 
+        lt.datetime,
+        l.location_name
+),
+
+redeemed_info AS (
+    SELECT
+        ri.datetime AS date,
+        l.location_name,
+        COUNT(DISTINCT ri.check_id) AS redeemed_checks_count,
+        SUM(ri.quantity) AS redeemed_items_count,
+        SUM(ri.product_value * ri.quantity) AS redeemed_value_total
+    FROM redeemed_items AS ri 
+    JOIN locations AS l
+        ON ri.location_id = l.id
+    WHERE ri.datetime >= '2025-01-01'
+      AND ri.datetime < '2025-08-01'
+    GROUP BY 
+        ri.datetime,
+        l.location_name
+),
+
+new_users AS (
+    SELECT 
+        u.account_registered AS date,
+        l.location_name,
+        COUNT(DISTINCT u.id) AS new_users_count
+    FROM users AS u
+    JOIN locations AS l
+        ON u.location_id = l.id
+    WHERE u.account_registered >= '2025-01-01'
+      AND u.account_registered < '2025-08-01'
+    GROUP BY 
+        u.account_registered,
+        l.location_name
+)
+
+SELECT 
+    rs.date,
+    rs.restaurant_name,
+    rs.checks_count,
+    rs.total_sales_amount,
+
+    COALESCE(ls.loyalty_checks_count, 0) AS loyalty_checks_count,
+    COALESCE(ls.loyalty_sales_amount, 0) AS loyalty_sales_amount,
+
+    COALESCE(ri.redeemed_checks_count, 0) AS redeemed_checks_count,
+    COALESCE(ri.redeemed_items_count, 0) AS redeemed_items_count,
+    COALESCE(ri.redeemed_value_total, 0) AS redeemed_value_total,
+
+    COALESCE(nu.new_users_count, 0) AS new_users_count
+
+FROM restaurant_sales AS rs
+LEFT JOIN loyalty_sales AS ls
+    ON rs.date = ls.date
+    AND rs.restaurant_name = ls.location_name
+LEFT JOIN redeemed_info AS ri
+    ON rs.date = ri.date
+    AND rs.restaurant_name = ri.location_name
+LEFT JOIN new_users AS nu
+    ON rs.date = nu.date
+    AND rs.restaurant_name = nu.location_name
+ORDER BY 
+    rs.date,
+    rs.restaurant_name;
+```
 
 ### Main Insights:
