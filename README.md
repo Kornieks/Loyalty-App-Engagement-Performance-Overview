@@ -41,7 +41,7 @@ The dataset contains daily restaurant-level aggregated metrics for 7 months in 2
 The original reporting process was based on two separate data sources: the restaurant operational database and an external loyalty program database. 
 The data models shown below were created by me as a conceptual reconstruction based on my previous work experience.
 
-<img width="851" height="836" alt="Restaurant and Loyalty DB relations drawio (2)" src="https://github.com/user-attachments/assets/e967edff-469c-43d6-90ce-a1e16050f8a6" />
+<img width="887" height="836" alt="Restaurant and Loyalty DB relations drawio" src="https://github.com/user-attachments/assets/03776bbe-6321-4c4e-99bc-5534df736638" />
 
 
 Note: The diagram does not represent the exact original production databases. Instead, it is designed to illustrate the logic of the data sources, the relationships between key tables, and how restaurant operations data could be connected with loyalty program data for analytical reporting.
@@ -59,5 +59,7 @@ Note: The diagram does not represent the exact original production databases. In
 <img width="730" height="600" alt="image" src="https://github.com/user-attachments/assets/b5c483c6-5387-4f35-a09f-d2b3e2c69e49" />
 
 ### SQL Code
+
+
 
 ### Main Insights:
