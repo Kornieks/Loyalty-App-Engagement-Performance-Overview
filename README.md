@@ -8,6 +8,7 @@
 5. [Dashboard](#dashboard)
 6. [SQL Code](#sql-code)
 7. [Main Insights](#main-insights)
+8. [Recommendations](#recommendations)
 
 ### Problem Statement 
 
@@ -168,15 +169,51 @@ Restaurants can be divided into three main groups based on revenue:
 - Low revenue: under $1.5M - City Harbor.
 
 There is only a weak correlation between revenue and validation rate.
-<img width="550" height="500" alt="image" src="https://github.com/user-attachments/assets/5d8a815f-bd7a-417e-8f91-e750a09e82a1" />
+<img width="550" height="500" alt="image" src="https://github.com/user-attachments/assets/93f55c4f-3d7b-4cb4-97e4-888d11cfb035" />
 
-Which suggests that there are other factors that influence validation rate like different target audiences.
-For instance, Park Avenue, Green Market, City Harbor and Fayna Town restaurants are located in residential district which greatly contributes to the validation rates. It also indicates higher retention rates. 
+This suggests that validation rate may be influenced by factors beyond revenue, such as target audience, location type, and customer behavior. 
+For example, Park Avenue, Green Market, City Harbor, and Fayna Town are located in residential districts, which may contribute to higher validation rates and potentially stronger customer retention.
+However, Sun District also has a lot of residential buildings around but its validation rate is almost the lowest which should be looked into.
 
 <img width="700" height="400" alt="image" src="https://github.com/user-attachments/assets/999671b2-bef1-45cb-b4b9-69d4a894b6e9" />
 
+There is also a positive moderate correlation between average check and revenue.
+<img width="550" height="500" alt="image" src="https://github.com/user-attachments/assets/b9ba33ee-840d-4913-9f34-80c492abe9a8" />
 
-And a positive moderate correlation between average check and revenue.
+In July, validated check volume declined significantly, particularly among high-revenue locations. 
+For example, Park Avenue saw a 20% decrease in validated checks on Fridays and Sundays, its typically busiest days. This trend is observed among other restaurants where sales increased as well.
 
+Since the validation process depends on staff, it is recommended to review employee schedules, as staffing may be the root cause of the issue.
 
+<img width="750" height="700" alt="image" src="https://github.com/user-attachments/assets/f800a36b-4a17-4310-8e29-d38a5ea47137" />
 
+Although loyalty users can redeem points for certain dishes, their average check is higher than that of non-loyalty guests.
+<img width="750" height="350" alt="image" src="https://github.com/user-attachments/assets/2c25b893-8bc4-4865-aac9-b47388616a6e" />
+
+### Recommendations
+
+1. **Investigate the drop in validated checks in July**
+
+The July decline should be reviewed in more detail, especially because it affected high-revenue locations. Since validation depends on staff involvement, management should check whether employee schedules, workload, or operational pressure on busy days contributed to the drop.
+
+2. **Review staffing on peak days as additional measure**
+
+If these are the busiest days, employees may have less time to remind guests about the loyalty app or scan checks properly.
+
+3. **Leverage locations in residential locations to increase loyalty engagement**
+
+Locations such as Park Avenue, Green Market, City Harbor, and Fayna Town already show strong validation rates. Management should use these locations as key opportunities to increase the share of loyalty guests and strengthen customer retention even further.
+This can be done through targeted marketing initiatives, personalized loyalty campaigns, and promotions designed to encourage repeat visits. 
+Additionally, conduct retention and cohort analysis to better understand which customer groups are most loyal and what initiatives drive repeat visits.
+
+4. **Adjust loyalty strategy by location type**
+
+Validation rate may depend on the target audience and restaurant location. Residential locations may have higher retention and stronger loyalty behavior, while tourist or business-area restaurants may need a different approach, such as clearer app promotion, faster validation process, or staff reminders.
+
+5. **Promote loyalty users as a high-value customer segment**
+
+Since loyalty users have a higher average check than non-loyalty guests, the program appears to attract or encourage more valuable customer behavior. Management should continue promoting loyalty app usage and encourage more guests to register and validate their checks.
+
+6. **Monitor validation rate regularly**
+
+Validation rate should be tracked by restaurant, day of week, and month to quickly identify drops. This would help management react faster when validation activity decreases and understand whether the issue is related to staff, location, seasonality, or customer behavior.
