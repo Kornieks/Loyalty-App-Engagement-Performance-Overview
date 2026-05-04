@@ -168,7 +168,8 @@ Restaurants can be divided into three main groups based on revenue:
 - Medium revenue: between $1.5M and $3.5M - Green Market, River Gate, Old Square.
 - Low revenue: under $1.5M - City Harbor.
 
-There is only a weak correlation between revenue and validation rate.
+There is a weak negative correlation between revenue and validation rate. The Spearman correlation coefficient is -0.11. 
+The p-value is less than 0.05, meaning the correlation is statistically significant at the 5% significance level.
 <img width="550" height="500" alt="image" src="https://github.com/user-attachments/assets/93f55c4f-3d7b-4cb4-97e4-888d11cfb035" />
 
 This suggests that validation rate may be influenced by factors beyond revenue, such as target audience, location type, and customer behavior. 
@@ -177,7 +178,11 @@ However, Sun District also has a lot of residential buildings around but its val
 
 <img width="700" height="400" alt="image" src="https://github.com/user-attachments/assets/999671b2-bef1-45cb-b4b9-69d4a894b6e9" />
 
-There is also a positive moderate correlation between average check and revenue.
+Average check and revenue:
+The Spearman correlation coefficient is 0.85, indicating a strong positive moderate correlation.
+The p-value is less than 0.05, meaning the correlation is statistically significant at the 5% significance level.
+
+The p-value is less than 0.05, meaning the correlation is statistically significant at the 5% significance level.
 <img width="550" height="500" alt="image" src="https://github.com/user-attachments/assets/b9ba33ee-840d-4913-9f34-80c492abe9a8" />
 
 In July, validated check volume declined significantly, particularly among high-revenue locations. 
