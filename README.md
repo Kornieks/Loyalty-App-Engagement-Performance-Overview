@@ -156,3 +156,27 @@ ORDER BY
 ```
 
 ### Main Insights:
+
+Overall, revenue has shown a steady upward trend since March. By July, sales had increased by 67% compared to the beginning of the year and by 10% compared to June.
+
+The validation rate remained relatively stable throughout the period. However, the chart shows a noticeable drop in July.
+
+Restaurants can be divided into three main groups based on revenue:
+
+- High revenue: above $3.5M - Park Avenue, Fayna Town, Sun District.
+- Medium revenue: between $1.5M and $3.5M - Green Market, River Gate, Old Square.
+- Low revenue: under $1.5M - City Harbor.
+
+There is only a weak correlation between revenue and validation rate.
+<img width="550" height="500" alt="image" src="https://github.com/user-attachments/assets/5d8a815f-bd7a-417e-8f91-e750a09e82a1" />
+
+Which suggests that there are other factors that influence validation rate like different target audiences.
+For instance, Park Avenue, Green Market, City Harbor and Fayna Town restaurants are located in residential district which greatly contributes to the validation rates. It also indicates higher retention rates. 
+
+<img width="700" height="400" alt="image" src="https://github.com/user-attachments/assets/999671b2-bef1-45cb-b4b9-69d4a894b6e9" />
+
+
+And a positive moderate correlation between average check and revenue.
+
+
+
