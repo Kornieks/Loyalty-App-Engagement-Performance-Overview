@@ -5,7 +5,7 @@
 2. [Data Source](#data-source)
 3. [Database Structure & Table Relationships](#database-structure--table-relationships)
 4. [Tools](#tools)
-5. [Dashboard](#dashboard)
+5. [Tableau Dashboard](#tableau-dashboard)
 6. [SQL Code](#sql-code)
 7. [Main Insights](#main-insights)
 8. [Recommendations](#recommendations)
