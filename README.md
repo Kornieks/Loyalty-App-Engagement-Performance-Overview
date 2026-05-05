@@ -22,7 +22,7 @@ This includes:
 
 Previously, similar reporting was done in Excel, which made it difficult to quickly identify trends, compare restaurant performance, and spot potential issues. This project demonstrates how the same type of reporting could be transformed into an interactive Tableau dashboard for clearer and faster decision-making. Below is the previous version of the dashboard visualization:
 
-<img width="1408" height="547" alt="Screenshot 2026-04-08 at 12 18 55" src="https://github.com/user-attachments/assets/ec0cc3b3-d3bb-49a5-baba-0ddb99368d88" />
+<img width="1500" height="330" alt="image" src="https://github.com/user-attachments/assets/83b4e14b-3668-4a3d-9167-79b282a2ce91" />
 
 
 
